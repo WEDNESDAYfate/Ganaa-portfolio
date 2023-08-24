@@ -1,5 +1,5 @@
 {
-  "homepage": "http://lzaya.com",
+  "homepage": "http://ganaa.us",
   "name": "frontend_react",
   "version": "0.1.0",
   "private": true,
@@ -19,6 +19,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
