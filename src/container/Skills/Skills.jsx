@@ -41,6 +41,9 @@ const Skills = () => {
             setResume(data);
         });
     }, []);
+          
+    //data.sort((a, b) => a.year.localeCompare(b.year));
+    const sortedExperiences = experiences.sort((a, b) => b.year.localeCompare(a.year));
 
     return (
         <>
@@ -68,8 +71,7 @@ const Skills = () => {
                 </motion.div>
 
                 <div className="app__skills-exp">
-                    {experiences.map((experience) => (
-
+                    {sortedExperiences.map((experience) => (
                         <motion.div
                             className="app__skills-exp-item"
                             key={experience.year}
